@@ -61,6 +61,8 @@ static int mutex_thread(void *arg)
         thread_yield();
     }
 
+    printf("mutex tester %p done\n", get_current_thread());
+
     return 0;
 }
 
